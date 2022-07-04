@@ -1,0 +1,70 @@
+.sidenav
+    background-color: #ffffff
+    display: flex
+    flex-direction: column
+    width: 250px
+    height: 100vh
+    position: fixed
+    z-index: 9999
+    padding: 30px
+    &__img
+        width: 100%
+        margin-bottom: 30px
+
+    .side-menu
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        margin-bottom: 30px
+        position: relative
+        &__img
+            margin-right: 10px
+        &__text
+            font-family: 'Nunito'
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            color: #636363
+            cursor: pointer
+            position: relative
+            &:hover
+                color: rgba(0, 0, 0, 1)
+            &__banner
+                position: absolute
+                top: 0
+                bottom: 0
+                margin: auto
+                right: -40px
+                max-height: 20px
+                max-width: 36px
+                padding: 5px
+                border-radius: 5px
+                display: flex
+                justify-content: center
+                align-items: center
+                background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%)
+            span
+                font-family: 'Nunito'
+                font-style: normal
+                font-weight: 700
+                font-size: 8px
+                line-height: 10px
+                color: #000000
+
+    .panel-title
+        a:before
+            float: right !important
+            font-family: FontAwesome
+            content: "\f068"
+            padding-right: 5px
+        a.collapse:before
+            float: right !important
+            content: "\f067"
+        a:hover
+            text-decoration: none
+        a:active
+            text-decoration: none
+        a:focus
+            text-decoration: none

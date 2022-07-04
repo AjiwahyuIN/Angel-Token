@@ -1,0 +1,39 @@
+section.section-page.section-page--hero
+    .container
+        .box-hero
+            .box-hero__information
+                h1.box-hero__title Future of Technology
+                p.box-hero__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus, odio dictum mi amet est tincidunt lorem vulputate lorem ipsum dolor lorem ipsum dolor sit.
+            .box-hero__swap
+                .container-swap
+                    .container-swap__list
+                        .box-swap
+                            img.box-swap__logo(src="../assets/images/bnb.png")
+                            .box-swap__amount 1234567890
+                            .box-swap__label
+                                p BNB
+                                include ../../components/caretDown.pug
+                    button.container-swap__action#btnSwitch: include ../../components/switch.pug
+                    .container-swap__list
+                        .box-swap
+                            img.box-swap__logo(src="../assets/images/clo.png")
+                            .box-swap__amount 1234567890
+                            .box-swap__label
+                                p CLO
+                                include ../../components/caretDown.pug
+
+                .swap-summary
+                    .swap-summary__list
+                        span Minimum received
+                        strong 0.034567
+                    
+                    .swap-summary__list
+                        span Price Impact
+                        strong <0.01%
+
+                    .swap-summary__list
+                        span Liquidity Provider Fee
+                        strong 0.034 BNB
+
+                a.btn.btn--primary.swap-action(href="#")
+                    span.btn__text Swap Now

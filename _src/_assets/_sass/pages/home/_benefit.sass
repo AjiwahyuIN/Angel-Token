@@ -1,0 +1,39 @@
+.section-page--benefit
+    padding: 60px 0px
+    background: radial-gradient(171.35% 677.61% at -81.67% -227.67%, #625B4E 0%, #232323 100%) 
+
+.box-benefit
+    display: grid
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+    column-gap: 30px
+    &__list
+        display: block
+
+    @include responsive-m()
+        padding: 0px 20px
+        grid-template-columns: repeat(1, minmax(0, 1fr))
+        column-gap: 0px
+        &__list
+            margin-bottom: 30px
+            .card-benefit
+                &__heading
+                    br
+                        display: none
+
+.card-benefit
+    @extend .flex
+    &__icon
+        margin-right: 20px
+        img
+            flex: 0 0 40px
+            min-width: 40px
+    &__meta
+        flex-grow: 1
+    &__heading
+        color: var(--text-body-white)
+        font-weight: 700
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 10px
+    &__email
+        color: var(--text-body-light)

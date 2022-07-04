@@ -1,0 +1,32 @@
+.tab
+    @extend .flex, .items-center
+    gap: 43px
+    padding-bottom: 22px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+    &__item
+        background-color: transparent
+        color: #fff
+        cursor: pointer
+        position: relative
+        font-weight: 700
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            bottom: -22px
+            height: 3px
+            left: 0
+            width: 100%
+            background-color: var(--color-blue-darken)
+            display: none
+        &:hover
+            color: var(--color-blue-darken)
+        &--active
+            color: var(--color-blue-darken)
+            &::before
+                display: block
+
+    &__content
+        display: none
+        &--default
+            display: block

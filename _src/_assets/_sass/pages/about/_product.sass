@@ -1,0 +1,51 @@
+.sec-product
+    padding-top: 80px
+    padding-bottom: 80px
+    .product
+        text-align: center
+        &__heading
+            font-family: 'Nunito'
+            font-style: normal
+            font-weight: 700
+            font-size: 40px
+            line-height: 120%
+            text-align: center
+            color: #000000
+            margin-bottom: 80px
+        &__wrapper
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-template-rows: repeat(3, 1fr)
+            grid-column-gap: 20px
+            grid-row-gap: 20px
+            &__grid
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: flex-start
+                &__icon
+                    min-width: 40px
+                    height: 40px
+                    margin-right: 20px
+                    background-color: rgba(196, 196, 196, 1)
+                &__text
+                    display: flex
+                    flex-direction: column
+                    align-content: center
+                    align-items: flex-start
+                    span:nth-child(1)
+                        font-family: 'Nunito'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 20px
+                        line-height: 120%
+                        color: #000000
+                        text-align: left
+                    span:nth-child(2)
+                        font-family: 'Nunito Sans'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 200%
+                        color: #636363
+                        text-align: left

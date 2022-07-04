@@ -1,0 +1,113 @@
+.comparison-slider
+    position: relative
+    border-radius: 36px
+    img
+        width: 100%
+        height: auto
+        display: block
+        max-width: unset
+        border-radius: 36px
+
+    .overlay
+        position: absolute
+        bottom: 20px
+        right: 20px
+        padding: 0 24px
+        background: rgba(255, 255, 255, 0.02)
+        backdrop-filter: blur(60px)
+        border-radius: 18px
+        white-space: nowrap
+        border-radius: 10px
+        font-weight: var(--font-extra-bold)
+        color: var(--color-base)
+        line-height: 56px
+        height: 56px
+        display: flex
+        align-items: center
+        gap: 12px
+        &--high-quality
+            top: 20px
+            bottom: unset
+        &__icon
+            img
+                width: 28px
+        &__text
+            color: white
+            line-height: 110%
+
+    .resize
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 50%
+        overflow: hidden
+        > img
+            display: block
+            max-width: unset
+        
+        .overlay
+            right: auto
+            left: 20px
+            text-align: left
+
+    @include responsive-m()
+        border-radius: 25px
+        img
+            border-radius: 25px
+
+        .overlay
+            font-size: 12px
+            padding: 0 16px
+            line-height: 42px
+            height: 42px
+            &__icon
+                img
+                    width: 20px
+
+
+
+.divider
+    position: absolute
+    width: 0px
+    height: 100%
+    left: 50%
+    top: 0
+    bottom: 0
+    margin-left: -1px
+    cursor: ew-resize
+    &:before
+        content: ""
+        position: absolute
+        width: 25px
+        height: 28px
+        left: 0px
+        top: 50%
+        margin-top: -14px
+        background-color: var(--color-pink)
+        background-image: url(../images/divider-right.svg)
+        background-repeat: no-repeat
+        background-position: 50%
+        transition: all 0.1s ease-in-out
+        border-radius: 0px 10px 10px 0px
+    &:after
+        content: ""
+        position: absolute
+        width: 25px
+        height: 28px
+        left: -25px
+        top: 50%
+        margin-top: -14px
+        background-color: var(--color-pink)
+        background-image: url(../images/divider-left.svg)
+        background-repeat: no-repeat
+        background-position: 50%
+        transition: all 0.1s ease-in-out
+        border-radius: 10px 0px 0px 10px
+        
+
+    &.draggable
+        &:before
+            opacity: 1
+        &:after
+            opacity: 1

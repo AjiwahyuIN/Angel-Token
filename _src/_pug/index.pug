@@ -1,0 +1,28 @@
+doctype html
+html(lang="en-GB")
+	head
+		include ../_parts/global/head.pug
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		title Angel Token
+	body
+		include ../_parts/global/navbar.pug
+		main.main-page
+			include ../_parts/pages/home/hero.pug
+			
+			.bg-dark-highlight
+				include ../_parts/pages/home/statistic.pug
+				include ../_parts/pages/home/information.pug
+				include ../_parts/pages/home/benefit.pug
+			
+			include ../_parts/pages/home/roadmap.pug
+			include ../_parts/pages/home/team.pug
+			include ../_parts/pages/home/partner.pug
+
+		
+		include ../_parts/global/footer.pug
+			
+		script(src="assets/js/global.js")
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+		script(src="assets/js/index.js")

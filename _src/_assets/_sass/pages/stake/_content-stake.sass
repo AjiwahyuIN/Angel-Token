@@ -1,0 +1,191 @@
+.sec-content-stake
+    margin-top: 60px
+    margin-bottom: 74px
+    .content-stake
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &__calculator
+            width: 530px
+            background: #FFFFFF
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
+            border-radius: 15px
+            padding: 30px
+            &__heading
+                font-family: 'Nunito'
+                font-style: normal
+                font-weight: 700
+                font-size: 30px
+                line-height: 140%
+                text-align: center
+                color: #000000
+                margin-bottom: 30px
+            .select-coin
+                width: 100%
+                background: #FAFAFA
+                border: 1px solid #DCDCDC
+                border-radius: 10px
+                padding: 10px
+                &__title
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 120%
+                    color: #636363
+                .coin--select
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-top: 10px
+                    padding: 0
+                &__custom-select
+                    &__icon
+                        width: 30px
+                        height: 20px
+                        background-image: url("../images/binance-coin.svg")
+                        background-position: center left
+                        background-repeat: no-repeat
+                    &__text
+                        font-family: 'Nunito'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: 14px
+                        line-height: 20px
+                        text-align: right
+                        color: #2CC17A
+                        position: absolute
+                        right: 30px
+                        top: 0
+                        bottom: 0
+                        margin: auto
+                    select
+                        width: 100%
+                        background-color: transparent
+                        font-family: 'Nunito'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 20px
+                        color: #000000
+                        option
+                            font-family: 'Nunito'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 20px
+                            color: #000000
+            .select-amount
+                margin-top: 30px
+                background: #FAFAFA
+                border: 1px solid #DCDCDC
+                border-radius: 10px
+                padding: 10px
+                display: flex
+                flex-direction: column
+                justify-items: flex-start
+                align-items: flex-start
+                &__title
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 120%
+                    color: #636363
+                &__input-number
+                    height: 20px
+                    margin-top: 10px
+                    background-color: transparent
+                    width: 100%
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 20px
+                    color: #000000
+            .lock-token
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin-top: 30px
+                &__title
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 20px
+                    margin-bottom: 10px
+                    letter-spacing: 0.05em
+                    text-transform: uppercase
+                    color: #636363
+                &__filter
+                    display: flex
+                    width: 100%
+                    flex-direction: row
+                    justify-content: space-between
+                    margin-bottom: 30px
+                    .item--active
+                        background-color: rgba(0, 0, 0, 1)
+                        span
+                            color: #ffffff
+                    &__item
+                        padding: 10px 20px
+                        max-width: 110px
+                        border: 1px solid #DCDCDC
+                        border-radius: 10px
+                        text-decoration: none
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        span
+                            font-family: 'Nunito'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: 14px
+                            line-height: 20px
+                            color: #000000
+
+        &__wallet
+            width: 530px
+            height: 490px
+            margin-left: 30px
+            padding: 30px
+            background-color: rgba(0, 0, 0, 1)
+            border-radius: 15px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            grid-column-gap: 0px
+            grid-row-gap: 30px
+            &__wrapper
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 40px 30px 40px 30px
+                &__icon
+                    width: 40px
+                    height: 40px
+                    border-radius: 50%
+                    background-color: rgba(196, 196, 196, 1)
+                &__number
+                    font-family: 'Nunito Sans'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 140%
+                    text-align: center
+                    color: #FFFFFF
+                    margin-top: 10px
+                &__desc
+                    font-family: 'Nunito Sans'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 140%
+                    margin-top: 5px
+                    text-align: center
+                    color: rgba(255, 255, 255, 0.5)

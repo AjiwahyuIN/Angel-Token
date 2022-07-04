@@ -1,0 +1,110 @@
+.section-page--hero
+    padding: 180px 0px 100px 0px
+    .box-hero
+        @extend .flex, .items-center, .justify-between
+        width: 100%
+        &__information
+            flex: 0 0 calc(100% / (12/5))
+            width: 100%
+            max-width: calc(100% / (12/5))
+        &__swap
+            flex: 0 0 50%
+            width: 100%
+            max-width: 50%
+        &__title
+            font-size: 80px
+            line-height: 96px
+            font-weight: 900
+            padding-bottom: 20px
+            font-family: var(--font-heading)
+            color: var(--text-dark)
+        &__desc
+            font-weight: 400
+            font-size: 20px
+            line-height: 200%
+
+    @include responsive-m()
+        padding: 110px 0px 60px 0px
+        .box-hero
+            display: block
+            width: 100%
+            padding: 0px 24px
+            &__information,
+            &__swap
+                flex: 0 0 100%
+                width: 100%
+                max-width: 100%
+            
+            &__information
+                text-align: center
+                padding-bottom: 40px
+            &__title
+                font-size: 50px
+                line-height: 60px
+                padding-bottom: 20px
+            &__desc
+                font-weight: 400
+                font-size: 20px
+                line-height: 200%
+
+.container-swap
+    position: relative
+    @extend .flex, .flex-col, .items-center
+    gap: 30px
+    margin-bottom: 30px
+    &__list
+        width: 100%
+    &__action
+        width: 60px
+        height: 60px
+        border-radius: 1000px
+        background: #FFFFFF
+        box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.2)
+        @extend .flex, .items-center, .justify-center
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        cursor: pointer
+    &--switch
+        flex-direction: column-reverse
+
+.box-swap
+    @extend .flex, .items-center
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05)
+    border-radius: 20px
+    background-color: #fff
+    padding: 30px
+    width: 100%
+    &__logo
+        width: 30px
+        margin-right: 20px
+    &__amount
+        flex-grow: 1
+        font-weight: 700
+        font-family: var(--font-heading)
+        color: var(--text-dark)
+    &__label
+        @extend .flex, .items-center 
+        gap: 10px
+
+
+.swap-summary
+    background-color: #E9E6E3
+    border-radius: 20px
+    padding: 30px
+    margin-bottom: 30px
+    @extend .flex, .flex-col
+    gap: 20px
+    &__list
+        @extend .flex, .items-center, .justify-between
+        strong
+            color: var(--text-dark)
+            font-weight: 700
+
+.swap-action
+    font-size: 20px
+    width: 100%
+    border-radius: 20px
+    height: 60px
+    line-height: 60px

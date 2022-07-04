@@ -1,0 +1,16 @@
+.section-page--partner
+    padding-bottom: 100px
+
+    .box-partner
+        @extend .flex, .items-center, .justify-between
+        list-style: none
+
+    @include responsive-m()
+        padding-bottom: 30px
+        overflow: auto
+        .box-partner
+            padding-left: 20px
+            &__list
+                max-width: 75vw
+                flex: 0 0 75vw
+            

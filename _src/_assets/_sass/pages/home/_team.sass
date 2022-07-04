@@ -1,0 +1,156 @@
+.section-page--team
+    padding-bottom: 100px
+    @include responsive-m()
+        padding: 0px 0px 60px 0px
+        .team-heading
+            padding: 0px 20px
+            margin-bottom: 20px
+            font-size: 30px
+
+        .box-team
+            column-gap: 0px
+            row-gap: 0px
+
+        .slick-dots
+            display: flex
+            align-items: center
+            justify-content: center
+            column-gap: 15px
+            height: 50px
+            margin-top: 20px
+            li
+                position: relative
+                overflow: hidden
+                width: 10px
+                height: 10px
+                border-radius: 100px
+                background-color: #D9D9D9
+                button
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    opacity: 0
+                &.slick-active
+                    background-color: var(--text-dark)
+
+        .slick-arrow
+            position: absolute
+            bottom: 0
+            &.btn-prev
+                left: 20px
+            &.btn-next
+                right: 20px
+
+.team-heading
+    text-align: center
+    font-size: 40px
+    line-height: 48px
+    margin-bottom: 60px
+    color: #000000
+    font-family: var(--font-heading)
+
+.box-team
+    display: grid
+    grid-template-columns: repeat(12, minmax(0, 1fr))
+    column-gap: 30px
+    row-gap: 30px
+    position: relative
+
+.card-team
+    padding-bottom: 40px
+    position: relative
+    overflow: hidden
+    border-radius: 30px
+    grid-column: span 4 / span 4
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: url('../images/bg-team.svg')no-repeat bottom center
+        background-size: 100%
+        z-index: 2
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 300px
+        right: 0
+        bottom: 0
+        left: 0
+        border-radius: 30px
+        background: radial-gradient(72.6% 126.24% at 49.85% -66.55%, #625B4E 0%, #232323 100%)
+        background-size: 100%
+        z-index: 1
+    &__info
+        margin-bottom: 30px
+        text-align: center
+        z-index: 3
+        position: absolute
+        background-color: #fff
+        width: calc( 100% - 20px )
+        bottom: -20px
+        left: 10px
+        border-radius: 20px
+        // padding: 13px 0px
+        padding: 32px 0px
+    &__name
+        font-size: 30px
+        line-height: 36px
+        font-weight: 700
+        // margin-bottom: 10px
+        font-family: var(--font-heading)
+        color: var(--text-dark)
+    &__position
+        font-size: 14px
+        line-height: 28px
+        display: none
+
+    &__photo
+        z-index: 2
+        position: relative
+        img
+            height: 400px
+            margin: auto
+            display: block
+            line-height: 0
+
+    &--smaller
+        padding-bottom: 50px
+        grid-column: span 3 / span 3
+        &::after
+            height: 220px
+        &__info
+            padding: 38px 0px
+            
+        &__name
+            font-size: 20px
+            line-height: 24px
+
+
+        &__photo
+            img
+                height: 280px
+
+    @include responsive-m()
+        padding-bottom: 40px
+        margin: 0px 20px
+        &::after
+            height: 300px
+        &__photo
+            img
+                height: 400px
+
+        &__name
+            font-size: 20px
+
+
+

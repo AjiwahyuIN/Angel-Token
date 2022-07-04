@@ -1,0 +1,24 @@
+.nav-coming
+	padding: 24px 0px
+	width: 100%
+	left: 0
+	top: 0
+	z-index: 1000
+	transition: all 0.3s
+	background-color: var(--bg-body)
+	position: fixed
+	position: relative
+	&__container
+		@extend .flex, .justify-between, .items-center
+		max-width: 1170px
+		margin: 0 auto
+
+	&__logo
+		display: block
+		flex-grow: 1
+		a
+			display: flex
+
+			&__img
+				width: auto
+				height: 40px

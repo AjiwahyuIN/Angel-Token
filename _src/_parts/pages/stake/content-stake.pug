@@ -1,0 +1,46 @@
+section.sec-content-stake 
+	.container.container--dashboard 
+		.content-stake
+			.content-stake__calculator
+				h4.content-stake__calculator__heading Staking Calculator
+				.select-coin 
+					span.select-coin__title Choose Coin
+					.select-coin__custom-select.coin--select
+						.select-coin__custom-select__icon
+						.select-coin__custom-select__text 84%
+						select
+							option(value="0") Binance Coin 
+							option(value="1") Solana Coin
+				.select-amount 
+						span.select-amount__title Type Amount
+						input(type="number").select-amount__input-number
+				.lock-token 
+					span.lock-token__title Lock Tokens For:
+					.lock-token__filter 
+						a.lock-token__filter__item.item--active(href="#")
+							span 30 Days 
+						a.lock-token__filter__item(href="#")
+							span 90 Days
+						a.lock-token__filter__item(href="#")
+							span 180 Days
+						a.lock-token__filter__item(href="#")
+							span 360 Days 
+					a.btn.btn--primary(href="#")
+						span.btn__text Connect Wallet
+			.content-stake__wallet
+				.content-stake__wallet__wrapper 
+					.content-stake__wallet__wrapper__icon 
+					span.content-stake__wallet__wrapper__number 0.00000000000
+					span.content-stake__wallet__wrapper__desc Coin Earned
+				.content-stake__wallet__wrapper 
+					.content-stake__wallet__wrapper__icon 
+					span.content-stake__wallet__wrapper__number 0.00000000000
+					span.content-stake__wallet__wrapper__desc Coin Earned
+				.content-stake__wallet__wrapper 
+					.content-stake__wallet__wrapper__icon 
+					span.content-stake__wallet__wrapper__number 0.00000000000
+					span.content-stake__wallet__wrapper__desc Coin Earned
+				.content-stake__wallet__wrapper 
+					.content-stake__wallet__wrapper__icon 
+					span.content-stake__wallet__wrapper__number 0.00000000000
+					span.content-stake__wallet__wrapper__desc Coin Earned

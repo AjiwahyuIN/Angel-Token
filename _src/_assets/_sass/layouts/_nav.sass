@@ -1,0 +1,56 @@
+.navbar
+	padding: 24px 0px
+	position: relative
+	position: fixed
+	width: 100%
+	left: 0
+	top: 0
+	z-index: 1000
+	transition: all 0.3s
+	background-color: var(--bg-body)
+
+	&__container
+		@extend .flex, .justify-between, .items-center
+		max-width: 1170px
+		margin: 0 auto
+
+	&__logo
+		display: block
+		flex-grow: 1
+
+		&.brand-logo
+			height: 40px
+			img 
+				width: auto
+				height: 40px
+
+	&__cta
+		@extend .flex, .items-center
+		gap: 30px
+
+	&--fixed
+		background-color: rgba(255, 255, 255, 1)
+		padding: 8px 80px
+		backdrop-filter: blur(20px)
+		&::after
+			opacity: 0
+		
+	&__toggle-menu
+		display: none
+		background-color: transparent
+		border: none
+		outline: none
+		width: 72px
+		height: 72px
+		@extend .flex, .items-center, .justify-center
+
+
+	@include responsive-m()
+		padding: 20px 0px
+		&__cta
+			display: none
+
+		&__logo
+			text-align: center
+			&.brand-logo
+				height: 40px

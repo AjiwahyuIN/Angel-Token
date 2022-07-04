@@ -1,0 +1,157 @@
+.section-page--roadmap
+    padding: 100px 0px
+    overflow: hidden
+    .slick-arrow
+        top: -110px
+        position: absolute
+        &.btn-prev
+            right: 80px
+        &.btn-next
+            right: 0
+
+    @include responsive-m()
+        .slick-arrow
+            display: none !important
+
+
+.header-roadmap
+    margin-bottom: 30px
+    h2
+        width: 100%
+        max-width: calc( 100% /(12/3))
+        font-size: 50px
+        line-height: 60px
+        font-weight: 700
+        color: var(--text-dark)
+    p
+        width: 100%
+        max-width: calc( 100% /(12/7))
+        font-size: 14px
+        line-height: 28px
+    .box-btn
+        width: 100%
+        max-width: calc( 100% /(12/2))
+        text-align: right
+    
+    @include responsive-m()
+        flex-direction: column
+        padding: 0px 20px
+        text-align: center
+        h2,
+        p
+            max-width: 100%
+        h2
+            font-size: 30px
+            line-height: 36px
+            margin-bottom: 20px
+        .box-btn
+            display: none
+
+
+.line-roadmap
+    margin-bottom: 20px
+    position: relative
+    height: 4px
+    transform: translateY(53px)
+    width: 100%
+    &::before
+        content: ''
+        height: 4px
+        width: 100%
+        left: 0
+        top: 50%
+        margin-top: -3px
+        position: absolute
+        background-color: #CECECE
+
+
+.container--roadmap
+    position: relative
+    &::before
+        content: ''
+        height: 4px
+        width: 100%
+        left: calc( -100% - 150px)
+        top: 27px
+        position: absolute
+        background-color: #232323
+
+.boxed-roadmap
+    position: relative
+    .slick-list
+        overflow: visible
+    .list
+        width: 100%
+        // max-width: 370px
+        padding: 15px
+        position: relative
+        &::after,
+        &::before
+            content: ''
+            height: 4px
+            width: 50%
+            top: 30px
+            margin-top: -2px
+            position: absolute
+            background-color: #CECECE
+            transition: all 0.3s ease
+        &::before
+            left: 0
+        &::after
+            left: -50%
+
+        .dot
+            width: 30px
+            height: 30px
+            border: 5px solid #fff
+            border-radius: 100px
+            background: var(--bg-gold)
+            position: relative
+            z-index: 2
+            margin: 0 auto
+            transform: scale(0)
+            transition: all 0.3s ease
+        &--done
+            .dot
+                transform: scale(1)
+            &::after
+                width: 100%
+                background-color: #232323
+
+    .box-roadmap
+        text-align: center
+        display: inline-block
+        background-color: #ffffff
+        border-radius: 20px
+        padding: 30px
+        height: 290px
+        min-width: 370px
+        margin-top: 20px
+        .label-roadmap
+            border-radius: 10px
+            display: inline-block
+            height: 40px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            line-height: 40px
+            padding: 0px 20px
+            background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%)
+            color: #000000
+            margin-bottom: 20px
+        h4
+            margin-bottom: 20px
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            font-family: var(--font-heading)
+            color: var(--text-dark)
+
+        p
+            color: #636363
+            font-weight: 400
+            font-size: 14px
+            line-height: 28px
+
+.bg-light-gray
+    background-color: #2C303B

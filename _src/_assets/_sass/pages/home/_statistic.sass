@@ -1,0 +1,53 @@
+.section-page--statistic
+    padding-bottom: 100px
+    @include responsive-m()
+        padding: 0px 20px 60px 20px 
+
+.box-statistic
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    border-radius: 30px
+    background: url('../images/bg-statistic.jpg')no-repeat center center
+    background-size: 100% 100%
+    padding: 45px
+    row-gap: 40px
+    column-gap: 30px
+
+    @include responsive-m()
+        grid-template-columns: repeat(1, minmax(0, 1fr))
+        background: url('../images/bg-statistic--mobile.jpg')no-repeat center center
+        background-size: 100% 100%
+        padding: 60px
+        column-gap: 0px
+        &__list
+            text-align: center
+        .logo-statistic
+            height: auto
+            width: 100%
+            &--desktop
+                display: none
+            &--mobile
+                display: block
+
+        .call-out
+            &__heading
+                font-size: 30px
+                line-height: 36px
+
+.call-out
+    &__heading
+        color: var(--text-dark)
+        font-size: 40px
+        font-weight: 700
+        line-height: 48px
+    &__info
+        font-size: 20px
+        line-height: 40px
+        font-family: var(--font-heading)
+
+.logo-statistic
+    height: 86px
+    &--desktop
+        display: block
+    &--mobile
+        display: none
