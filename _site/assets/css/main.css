@@ -503,6 +503,109 @@ button.btn-arrow {
   margin-bottom: 30px;
   position: relative;
 }
+.sidenav .side-menu__list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  list-style: none;
+  background-color: transparent;
+}
+.sidenav .side-menu__list li.active h3 {
+  margin-bottom: 20px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+.sidenav .side-menu__list li.active h3::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.sidenav .side-menu__list__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.sidenav .side-menu__list__wrapper img {
+  margin-right: 10px;
+}
+.sidenav .side-menu__list__wrapper h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #636363;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  padding-top: 3px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+.sidenav .side-menu__list__wrapper h3:hover {
+  color: rgb(0, 0, 0);
+}
+.sidenav .side-menu__list__wrapper h3::after {
+  content: "";
+  font-family: "material-design-iconic-font";
+  position: absolute;
+  right: 0;
+  top: 2px;
+  color: #Fcc110;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  background-image: url("../images/acc-icon.svg");
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.sidenav .side-menu__list__panel {
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 10px 0px 0px 34px;
+  padding: 0;
+  cursor: pointer;
+}
+.sidenav .side-menu__list__panel a:nth-child(2) {
+  margin: 32px 0px 0px 0px;
+}
+.sidenav .side-menu__list__panel a:nth-child(3) {
+  margin: 32px 0px 0px 0px;
+}
+.sidenav .side-menu__list__panel a {
+  position: relative;
+  display: block;
+  padding: 0px;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #636363;
+  cursor: pointer;
+  position: relative;
+}
+.sidenav .side-menu__list__panel a:hover {
+  color: rgb(0, 0, 0);
+}
 .sidenav .side-menu__img {
   margin-right: 10px;
 }

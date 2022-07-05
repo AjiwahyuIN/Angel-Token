@@ -1,22 +1,37 @@
-aside.sidenav 
-	img(src="assets/images/main-logo.png", alt="logo-sidenav").sidenav__img
+aside.sidenav
+	a(href="https://angel-token.vercel.app/") 
+		img(src="assets/images/main-logo.png", alt="logo-sidenav").sidenav__img
 	.side-menu 
 		img(src="assets/images/home-icon.svg").side-menu__img
-		a(href="#").side-menu__text Home
+		a(href="https://angel-token.vercel.app/").side-menu__text Home
 	.side-menu 
 		img(src="assets/images/stake.svg").side-menu__img
-		a(href="#").side-menu__text Stake
-	.side-menu 
-		img(src="assets/images/trade.svg").side-menu__img
-		a(href="#").side-menu__text Trade
+		a(href="https://angel-token.vercel.app/stake.html").side-menu__text Stake
+	.side-menu.menu--acc
+		ul.side-menu__list 
+			li 
+				.side-menu__list__wrapper 
+					img(src="assets/images/trade.svg")
+					h3.side-menu__list__text Trade
+				.side-menu__list__panel 
+					a(href="https://angel-token.vercel.app/swap.html") Swap 
+					a(href="#") Liquidity
+		
 	.side-menu 
 		img(src="assets/images/nft.svg").side-menu__img
 		a(href="#").side-menu__text NFT Market
 			.side-menu__text__banner
 				span soon!
 	.side-menu 
-		img(src="assets/images/angel.svg").side-menu__img
-		a(href="#").side-menu__text Angel NFTs
+		ul.side-menu__list 
+			li 
+				.side-menu__list__wrapper 
+					img(src="assets/images/angel.svg")
+					h3.side-menu__list__text Angel NFTs
+				.side-menu__list__panel 
+					a(href="#") NFT Mining
+					a(href="#") NFT Box
+					a(href="#") Mint
 	.side-menu 
 		img(src="assets/images/launchpad.svg").side-menu__img
 		a(href="#").side-menu__text Launchpad
@@ -31,7 +46,7 @@ aside.sidenav
 		a(href="#").side-menu__text Charity
 	.side-menu 
 		img(src="assets/images/about-angel.svg").side-menu__img
-		a(href="#").side-menu__text About Angel Token
+		a(href="https://angel-token.vercel.app/about.html").side-menu__text About Angel Token
 	.side-menu 
 		img(src="assets/images/help.svg").side-menu__img
 		a(href="#").side-menu__text Help Center
