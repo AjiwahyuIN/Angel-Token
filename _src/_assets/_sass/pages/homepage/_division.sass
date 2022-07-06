@@ -1,33 +1,42 @@
 .sec-division
 	padding-bottom: 80px
-	.container
+	@include responsive-m()
 		.wrapper-division
-			display: flex
-			flex-direction: row
-			justify-content: flex-start
-			align-items: center
+			flex-direction: column !important
+			align-items: flex-start !important
 			&__division
-				display: flex
-				justify-content: flex-start
-				align-items: flex-start
-				&__img
-					margin-right: 20px
 				&__teks
-					text-align: left
-					display: flex
-					flex-direction: column
-					&__heading
-						font-family: 'Nunito'
-						font-style: normal
-						font-weight: 700
-						font-size: 20px
-						line-height: 120%
-						color: #000000
-						margin-bottom: 10px
-					&__desc
-						font-family: 'Nunito Sans'
-						font-style: normal
-						font-weight: 400
-						font-size: 14px
-						line-height: 200%
-						color: #636363
+					.crypto--access
+						max-width: 100% !important
+	.wrapper-division
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		&__division
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			&__img
+				margin-right: 20px
+			&__teks
+				text-align: left
+				display: flex
+				flex-direction: column
+				&__heading
+					font-family: 'Nunito'
+					font-style: normal
+					font-weight: 700
+					font-size: 20px
+					line-height: 120%
+					color: #000000
+					margin-bottom: 10px
+				.crypto--access
+					max-width: 50%
+				&__desc
+					font-family: 'Nunito Sans'
+					font-style: normal
+					font-weight: 400
+					font-size: 14px
+					line-height: 200%
+					color: #636363

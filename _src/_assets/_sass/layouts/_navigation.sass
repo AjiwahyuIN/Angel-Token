@@ -5,11 +5,45 @@
     width: 100%
     left: 0
     top: 0
-    z-index: 100
+    z-index: 90
+    height: 80px
     transition: all 0.3s
     background-color: var(--bg-body)
+    @include responsive-m()
+        .navigation__container
+            padding-left: 20px
+            &__brand
+                display: block !important
+                position: absolute
+                left: 20px
+                top: 25px
+                margin: auto
+        .navigation__cta
+            display: none
+        .btn-nav-m
+            display: block !important
+    .btn-nav-m
+        width: 40px
+        height: 40px
+        cursor: pointer
+        background-image: url("../images/hamburger.svg")
+        background-position: center center
+        background-repeat: no-repeat
+        padding: 10px
+        border: 1px solid rgba(0, 0, 0, 0.5)
+        border-radius: 10px
+        position: absolute
+        right: 20px
+        top: 20px
+        margin: auto 0
+        display: none
 
     &__container
-        @extend .flex, .justify-end, .items-center
+        display: flex
+        justify-content: flex-end
+        align-items: center
         max-width: 1170px
         margin: 0 auto
+        &__brand
+            width: 150px
+            display: none

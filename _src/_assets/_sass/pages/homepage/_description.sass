@@ -1,10 +1,28 @@
 .sec-description
+	@include responsive-m()
+		.wrapper-description
+			flex-direction: column-reverse
+			align-items: center !important
+			&__img
+				width: 100% !important
+				margin-top: 20px
+			&__teks
+				width: 100% !important
+				padding-left: 0px !important
+				&__heading
+					text-align: center
+					font-size: 30px !important
+					line-height: 120% !important
+					margin-bottom: 20px !important
+				&__desc
+					text-align: center
 	.wrapper-description
 		widows: 100%
 		display: flex
 		align-items: flex-start
 		justify-content: center
 		padding-bottom: 80px
+
 		&__img
 			width: 40%
 			display: flex

@@ -1,147 +1,177 @@
+
 .sidenav
-    background-color: #ffffff
-    display: flex
-    flex-direction: column
-    width: 250px
-    height: 100vh
-    position: fixed
-    z-index: 9999
-    padding: 30px
-    &__img
-        width: 100%
-        margin-bottom: 30px
+	background-color: #ffffff
+	display: flex
+	flex-direction: column
+	width: 250px
+	height: 100vh
+	position: fixed !important
+	z-index: 99
+	padding: 30px
+	position: relative
+	@include responsive-m()
+		padding: 20px
+		width: 100%
+		display: none
+		.sidenav__img
+			width: 150px
+		.btn-sidenav-m
+			width: 40px
+			height: 40px
+			cursor: pointer
+			background-image: url("../images/hamburger.svg")
+			background-position: center center
+			background-repeat: no-repeat
+			padding: 10px
+			border: 1px solid rgba(0, 0, 0, 0.5)
+			border-radius: 10px
+			position: absolute
+			top: 20px
+			right: 20px
+			z-index: 99
+		.side-menu
+			&__list
+				&__wrapper
+					h3
+						&::after
+							right: auto !important
+							left: 150px
+	&__img
+		width: 100%
+		margin-bottom: 30px
+		margin-top: 5px
 
-    .side-menu
-        display: flex
-        flex-direction: row
-        justify-content: flex-start
-        align-items: center
-        margin-bottom: 30px
-        position: relative
-        &__list
-            position: relative
-            display: block
-            width: 100%
-            height: auto
-            margin: 0
-            list-style: none
-            background-color: transparent
-            li
-                &.active
-                    h3
-                        margin-bottom: 20px
-                        transition: 300ms
-                        &::after
-                            transform: rotate(180deg)
+	.side-menu
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 30px
+		position: relative
+		&__list
+			position: relative
+			display: block
+			width: 100%
+			height: auto
+			margin: 0
+			list-style: none
+			background-color: transparent
+			li
+				&.active
+					h3
+						margin-bottom: 20px
+						transition: 300ms
+						&::after
+							transform: rotate(180deg)
 
-            &__wrapper
-                display: flex
-                flex-direction: row
-                align-items: flex-start
-                justify-content: flex-start
-                img
-                    margin-right: 10px
-                h3
-                    font-family: 'Nunito'
-                    font-style: normal
-                    font-weight: 600
-                    font-size: 14px
-                    line-height: 20px
-                    color: #636363
-                    cursor: pointer
-                    position: relative
-                    width: 100%
-                    padding-top: 3px
-                    transition: 300ms
-                    &:hover
-                        color: rgba(0, 0, 0, 1)
-                    &::after
-                        content: ""
-                        font-family: "material-design-iconic-font"
-                        position: absolute
-                        right: 0
-                        top: 2px
-                        color: #Fcc110
-                        transition: all 0.3s ease-in-out
-                        font-size: 14px
-                        background-image: url("../images/acc-icon.svg")
-                        width: 20px
-                        height: 20px
-                        margin-bottom: 20px
-            &__panel
-                position: relative
-                display: block
-                height: auto
-                margin: 10px 0px 0px 34px
-                padding: 0
-                cursor: pointer
-                a:nth-child(2)
-                    margin: 32px 0px 0px 0px
-                a:nth-child(3)
-                    margin: 32px 0px 0px 0px
-                a
-                    position: relative
-                    display: block
-                    padding: 0px
-                    cursor: pointer
-                    font-family: 'Nunito'
-                    font-style: normal
-                    font-weight: 600
-                    font-size: 14px
-                    line-height: 20px
-                    color: #636363
-                    cursor: pointer
-                    position: relative
-                    &:hover
-                        color: rgba(0, 0, 0, 1)
+			&__wrapper
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: flex-start
+				img
+					margin-right: 10px
+				h3
+					font-family: 'Nunito'
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 20px
+					color: #636363
+					cursor: pointer
+					position: relative
+					width: 100%
+					padding-top: 3px
+					transition: 300ms
+					&:hover
+						color: rgba(0, 0, 0, 1)
+					&::after
+						content: ""
+						font-family: "material-design-iconic-font"
+						position: absolute
+						right: 0
+						top: 2px
+						color: #Fcc110
+						transition: all 0.3s ease-in-out
+						font-size: 14px
+						background-image: url("../images/acc-icon.svg")
+						width: 20px
+						height: 20px
+						margin-bottom: 20px
+			&__panel
+				position: relative
+				display: block
+				height: auto
+				margin: 10px 0px 0px 34px
+				padding: 0
+				cursor: pointer
+				a:nth-child(2)
+					margin: 32px 0px 0px 0px
+				a:nth-child(3)
+					margin: 32px 0px 0px 0px
+				a
+					position: relative
+					display: block
+					padding: 0px
+					cursor: pointer
+					font-family: 'Nunito'
+					font-style: normal
+					font-weight: 600
+					font-size: 14px
+					line-height: 20px
+					color: #636363
+					cursor: pointer
+					position: relative
+					&:hover
+						color: rgba(0, 0, 0, 1)
 
-        &__img
-            margin-right: 10px
-        &__text
-            font-family: 'Nunito'
-            font-style: normal
-            font-weight: 600
-            font-size: 14px
-            line-height: 20px
-            color: #636363
-            cursor: pointer
-            position: relative
-            &:hover
-                color: rgba(0, 0, 0, 1)
-            &__banner
-                position: absolute
-                top: 0
-                bottom: 0
-                margin: auto
-                right: -40px
-                max-height: 20px
-                max-width: 36px
-                padding: 5px
-                border-radius: 5px
-                display: flex
-                justify-content: center
-                align-items: center
-                background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%)
-            span
-                font-family: 'Nunito'
-                font-style: normal
-                font-weight: 700
-                font-size: 8px
-                line-height: 10px
-                color: #000000
+		&__img
+			margin-right: 10px
+		&__text
+			font-family: 'Nunito'
+			font-style: normal
+			font-weight: 600
+			font-size: 14px
+			line-height: 20px
+			color: #636363
+			cursor: pointer
+			position: relative
+			&:hover
+				color: rgba(0, 0, 0, 1)
+			&__banner
+				position: absolute
+				top: 0
+				bottom: 0
+				margin: auto
+				right: -40px
+				max-height: 20px
+				max-width: 36px
+				padding: 5px
+				border-radius: 5px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%)
+			span
+				font-family: 'Nunito'
+				font-style: normal
+				font-weight: 700
+				font-size: 8px
+				line-height: 10px
+				color: #000000
 
-    .panel-title
-        a:before
-            float: right !important
-            font-family: FontAwesome
-            content: "\f068"
-            padding-right: 5px
-        a.collapse:before
-            float: right !important
-            content: "\f067"
-        a:hover
-            text-decoration: none
-        a:active
-            text-decoration: none
-        a:focus
-            text-decoration: none
+	.panel-title
+		a:before
+			float: right !important
+			font-family: FontAwesome
+			content: "\f068"
+			padding-right: 5px
+		a.collapse:before
+			float: right !important
+			content: "\f067"
+		a:hover
+			text-decoration: none
+		a:active
+			text-decoration: none
+		a:focus
+			text-decoration: none

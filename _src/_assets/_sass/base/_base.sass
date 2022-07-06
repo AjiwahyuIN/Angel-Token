@@ -33,6 +33,8 @@ body
     background-color: rgba(240, 240, 240, 1)
     margin-top: -185px
     padding-top: 180px
+    @include responsive-m()
+        background-color: #ffffff
 
 .main-black
     background-color: rgba(0, 0, 0, 1)
@@ -51,9 +53,15 @@ img
 .container--top
     padding-top: 98px
     padding-left: 160px
+    @include responsive-m()
+        padding-left: 20px
+        padding-right: 20px
 
 .container--dashboard
     padding-left: 160px
+    @include responsive-m()
+        padding-left: 20px
+        padding-right: 20px
 
 a, button
     font-family: var(--font-heading)

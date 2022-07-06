@@ -141,6 +141,13 @@ $('.slider-homepage').slick({
 });
 
 
+$('.btn-nav-m').click(function(){
+  $('.sidenav').css({'display':'block','opacity':'1 !important', 'transition': 'opacity 1s ease-out'})
+})
+
+$('.btn-sidenav-m').click(function(){
+  $('.sidenav').css({'display':'none'})
+})
 
 
 
