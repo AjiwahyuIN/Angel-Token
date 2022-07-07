@@ -9,11 +9,17 @@
             text-align: left
             color: #000000
             margin-bottom: 30px
+            @include responsive-m()
+                font-size: 30px
+                line-height: 120%
+                text-align: center
         &__search-bar
             background: #FFFFFF
             box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05)
             border-radius: 15px
             padding: 30px
+            @include responsive-m()
+                display: none
             .search
                 width: 100%
                 background: #FAFAFA
@@ -85,6 +91,106 @@
                 flex-direction: row
                 justify-content: space-between
                 align-items: center
+                span
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 20px
+                    color: #878787
+                a
+                    font-family: 'Nunito'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 20px
+                    /* identical to box height, or 143% */
+                    color: #000000
+                    text-decoration: none
+                a:hover
+                    opacity: 0.6
+        &__search-bar-m
+            background: #FFFFFF
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05)
+            border-radius: 15px
+            padding: 20px
+            @include responsive-xl()
+                display: none
+            .search-m
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                &__dropdown-m
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    padding: 10px 20px 10px 20px
+                    background-color: rgba(0, 0, 0, 1)
+                    border-radius: 10px
+                    margin-bottom: 20px
+                    &__title
+                        font-family: 'Nunito'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: 14px
+                        line-height: 20px
+                        color: rgba(255, 255, 255, 0.6)
+                        margin-right: 10px
+                    &__custom-select
+                        select
+                            background-color: transparent
+                            font-family: 'Nunito'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: 14px
+                            line-height: 20px
+                            color: #FFFFFF
+                            option
+                                font-family: 'Nunito'
+                                font-style: normal
+                                font-weight: 700
+                                font-size: 14px
+                                line-height: 20px
+                                color: #FFFFFF
+                &__form-m
+                    width: 100%
+                    padding: 10px 10px 10px 20px
+                    display: flex
+                    align-items: center
+                    background: #FAFAFA
+                    border: 1px solid #DCDCDC
+                    border-radius: 10px
+                    margin-bottom: 20px
+                    &__input-m
+                        font-family: 'Nunito'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 20px
+                        color: #878787
+                        width: 90%
+                        height: 100%
+                        background-color: transparent !important
+                    &__submit-m
+                        cursor: pointer
+                        background-color: transparent
+                        width: 10%
+                        height: 20px
+                        background-image: url("../images/search-icon.svg")
+                        background-position: center right
+                        background-repeat: no-repeat
+            &__keyword-m
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                align-items: center
+                &__item
+                    display: flex
+                    flex-direction: row
+                    width: 70%
+                    justify-content: space-evenly
                 span
                     font-family: 'Nunito'
                     font-style: normal

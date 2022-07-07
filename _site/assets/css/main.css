@@ -2776,12 +2776,24 @@ button.btn-arrow {
   color: #000000;
   margin-bottom: 30px;
 }
+@media all and (max-width: 568px) {
+  .sec-header-market .header-market__heading {
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+  }
+}
 .sec-header-market .header-market__search-bar {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 30px;
+}
+@media all and (max-width: 568px) {
+  .sec-header-market .header-market__search-bar {
+    display: none;
+  }
 }
 .sec-header-market .header-market__search-bar .search {
   width: 100%;
@@ -2912,9 +2924,195 @@ button.btn-arrow {
 .sec-header-market .header-market__search-bar__keyword a:hover {
   opacity: 0.6;
 }
+.sec-header-market .header-market__search-bar-m {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+}
+@media all and (min-width: 1024px) {
+  .sec-header-market .header-market__search-bar-m {
+    display: none;
+  }
+}
+.sec-header-market .header-market__search-bar-m .search-m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sec-header-market .header-market__search-bar-m .search-m__dropdown-m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.sec-header-market .header-market__search-bar-m .search-m__dropdown-m__title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
+}
+.sec-header-market .header-market__search-bar-m .search-m__dropdown-m__custom-select select {
+  background-color: transparent;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.sec-header-market .header-market__search-bar-m .search-m__dropdown-m__custom-select select option {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.sec-header-market .header-market__search-bar-m .search-m__form-m {
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFAFA;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.sec-header-market .header-market__search-bar-m .search-m__form-m__input-m {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #878787;
+  width: 90%;
+  height: 100%;
+  background-color: transparent !important;
+}
+.sec-header-market .header-market__search-bar-m .search-m__form-m__submit-m {
+  cursor: pointer;
+  background-color: transparent;
+  width: 10%;
+  height: 20px;
+  background-image: url("../images/search-icon.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.sec-header-market .header-market__search-bar-m__keyword-m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sec-header-market .header-market__search-bar-m__keyword-m__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.sec-header-market .header-market__search-bar-m__keyword-m span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #878787;
+}
+.sec-header-market .header-market__search-bar-m__keyword-m a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  color: #000000;
+  text-decoration: none;
+}
+.sec-header-market .header-market__search-bar-m__keyword-m a:hover {
+  opacity: 0.6;
+}
 
 .sec-filter-market {
   padding-top: 60px;
+}
+@media all and (max-width: 568px) {
+  .sec-filter-market {
+    padding-top: 60px;
+  }
+  .sec-filter-market .filter {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .sec-filter-market .filter__item {
+    width: 100% !important;
+  }
+  .sec-filter-market .filter__item__wrapper:last-child {
+    display: none;
+  }
+  .sec-filter-market .filter__select {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .sec-filter-market .filter__select__dropdown {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
 }
 .sec-filter-market .filter {
   display: -webkit-box;
@@ -3030,6 +3228,28 @@ button.btn-arrow {
 .sec-content-market {
   margin-bottom: 30px;
 }
+@media all and (max-width: 568px) {
+  .sec-content-market {
+    margin-top: 0px;
+  }
+  .sec-content-market .content-market {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+  }
+  .sec-content-market .content-market__card {
+    height: 460px !important;
+    max-width: 100% !important;
+  }
+  .sec-content-market .content-market__card__image {
+    overflow: hidden !important;
+    max-width: 100% !important;
+    height: 374px !important;
+  }
+  .sec-content-market .content-market__card__image img {
+    width: 100% !important;
+    height: 374px !important;
+  }
+}
 .sec-content-market .content-market {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -3051,21 +3271,34 @@ button.btn-arrow {
 }
 .sec-content-market .content-market__card {
   max-width: 250px;
-  max-height: 335px;
+  height: 335px;
   cursor: pointer;
   border-radius: 15px;
+  overflow: hidden;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .sec-content-market .content-market__card__image {
   max-width: 250px;
-  max-height: 250px;
+  height: 250px;
   position: relative;
 }
 .sec-content-market .content-market__card__image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sec-content-market .content-market__card__image__title {
   opacity: 0;
