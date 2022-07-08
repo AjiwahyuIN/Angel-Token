@@ -1,6 +1,22 @@
 .sec-content-stake
     margin-top: 60px
     margin-bottom: 74px
+    @include responsive-m()
+        margin-bottom: 60px
+        .content-stake
+            flex-direction: column !important
+            &__calculator
+                width: 100% !important
+                margin-bottom: 20px
+                &__heading
+                    font-size: 20px !important
+                    line-height: 140% !important
+                    margin-bottom: 20px !important
+            &__wallet
+                width: 100% !important
+                margin-left: 0px !important
+                grid-row-gap: 0px !important
+                padding: 20px !important
     .content-stake
         display: flex
         flex-direction: row
@@ -87,6 +103,8 @@
                 flex-direction: column
                 justify-items: flex-start
                 align-items: flex-start
+                @include responsive-m()
+                    margin-top: 20px !important
                 &__title
                     font-family: 'Nunito'
                     font-style: normal
@@ -111,6 +129,9 @@
                 justify-content: center
                 align-items: center
                 margin-top: 30px
+                @include responsive-m
+                    margin-top: 20px !important
+
                 &__title
                     font-family: 'Nunito'
                     font-style: normal
@@ -122,24 +143,31 @@
                     text-transform: uppercase
                     color: #636363
                 &__filter
-                    display: flex
-                    width: 100%
-                    flex-direction: row
-                    justify-content: space-between
+                    display: grid
+                    grid-template-columns: repeat(4, 1fr)
+                    grid-template-rows: 1fr
+                    grid-column-gap: 10px
+                    grid-row-gap: 10px
                     margin-bottom: 30px
+                    @include responsive-m()
+                        grid-template-columns: repeat(2, 1fr)
+                        grid-template-rows: repeat(2, 1fr)
+                        grid-column-gap: 20px
                     .item--active
                         background-color: rgba(0, 0, 0, 1)
                         span
                             color: #ffffff
                     &__item
-                        padding: 10px 20px
-                        max-width: 110px
+                        height: 40px
+                        width: 100px
                         border: 1px solid #DCDCDC
                         border-radius: 10px
                         text-decoration: none
                         display: flex
                         justify-content: center
                         align-items: center
+                        @include responsive-m()
+                            width: 190px
                         span
                             font-family: 'Nunito'
                             font-style: normal
@@ -147,6 +175,9 @@
                             font-size: 14px
                             line-height: 20px
                             color: #000000
+                .btn--calculator
+                    width: 100% !important
+                    display: flex
 
         &__wallet
             width: 530px
@@ -170,7 +201,7 @@
                     width: 40px
                     height: 40px
                     border-radius: 50%
-                    background-color: rgba(196, 196, 196, 1)
+                    object-fit: cover
                 &__number
                     font-family: 'Nunito Sans'
                     font-style: normal

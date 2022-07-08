@@ -1,6 +1,81 @@
 section.sec-content-swap 
 	.container.container--dashboard 
 		.content-swap 
+			.content-swap__swap 
+				.content-swap__swap__heading Swap Calculator
+				.swap-wrapper 
+					.swap-wrapper__from
+						span.swap-wrapper__from__label From
+						.swap-wrapper__from__input-from 
+							input(type="number").swap-wrapper__from__input-from__input-number
+							.swap-wrapper__from__input-from__icon
+								img(src="assets/images/bnb-sm.png", alt="")
+							select.swap-wrapper__from__input-from__select
+								option(value="0") BNB
+								option(value="1") CLO
+					.swap-wrapper__to
+						span.swap-wrapper__to__label To (estimated)
+						.swap-wrapper__to__input-to 
+							input(type="number").swap-wrapper__to__input-to__input-number
+							.swap-wrapper__to__input-to__icon
+								img(src="assets/images/clo-sm.png", alt="")
+							select.swap-wrapper__to__input-to__select
+								option(value="0") CLO
+								option(value="1") BNB
+					.swap-wrapper__btn-swap
+				.content-swap__swap__price-wrapper 
+					span.content-swap__swap__price-wrapper__price Price
+					span.content-swap__swap__price-wrapper__value 1.19812 BNB per Callisto
+				.content-swap__swap__detail-wrapper 
+					.content-swap__swap__detail-wrapper__detail 	
+						span Minimum received
+						span 0.034567
+					.content-swap__swap__detail-wrapper__detail 	
+						span Price Impact
+						span <0.01%
+					.content-swap__swap__detail-wrapper__detail 	
+						span Liquidity Provider Fee
+						span 0.034 BNB
+				a(href="#").btn-swap
+					span.btn-swap__text Buy
 			.content-swap__chart 
+				.content-swap__chart__header 
+					img(src="assets/images/clo-xl.png", alt="").content-swap__chart__header__icon
+					img(src="assets/images/bnb-xl.png", alt="").content-swap__chart__header__icon
+					span.content-swap__chart__header__text BNB/CAKE
+				.content-swap__chart__content 
+					.content-swap__chart__content__heading 
+						.heading-chart 
+							span 50.7
+							span BNB/CAKE
+							span -0.561 (-1.09%)
+						span Mar 30, 2022, 05:14 PM
+					.tabs-filter
+						.tabs-filter__item 
+							span.tabs-filter__item__text 24H
+						.tabs-filter__item 
+							span.tabs-filter__item__text 1W
+						.tabs-filter__item 
+							span.tabs-filter__item__text 1M
+						.tabs-filter__item.item--active 
+							span.tabs-filter__item__text 1Y
 				.tradingview-widget-container
 					#tradingview_f8b38
+				.content-swap__chart__footer-filter
+					.content-swap__chart__footer-filter__wrapper
+						.content-swap__chart__footer-filter__wrapper__text
+							span 12:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 01:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 02:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 03:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 04:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 05:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 06:00 PM
+						.content-swap__chart__footer-filter__wrapper__text
+							span 06:00 PM

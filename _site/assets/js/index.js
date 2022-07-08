@@ -1,6 +1,9 @@
 $('#btnSwitch').on('click', function(){
     $('.container-swap').toggleClass('container-swap--switch')
 })
+$('.swap-wrapper__btn-swap').on('click', function(){
+    $('.swap-wrapper').toggleClass('swap-wrapper--switch')
+})
 
 $('#boxRoadmap').slick({
     slidesToShow: 3,
