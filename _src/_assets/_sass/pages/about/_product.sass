@@ -1,6 +1,19 @@
 .sec-product
     padding-top: 80px
     padding-bottom: 80px
+    @include responsive-m()
+        padding: 60px 0px 60px 0px !important
+        .product
+            &__heading
+                font-size: 30px !important
+                line-height: 120% !important
+                margin-bottom: 30px !important
+            &__wrapper
+                grid-template-columns: repeat(1, 1fr) !important
+                grid-template-rows: repeat(1, 1fr) !important
+                grid-row-gap: 30px !important
+                &__grid
+                    justify-content: flex-start !important
     .product
         text-align: center
         &__heading
@@ -49,3 +62,5 @@
                         line-height: 200%
                         color: #636363
                         text-align: left
+                        @include responsive-m()
+                            max-width: 80%

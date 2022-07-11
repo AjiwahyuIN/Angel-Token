@@ -1,5 +1,18 @@
 .sec-how-to
     padding-bottom: 80px
+    @include responsive-m()
+        padding-bottom: 60px !important
+        .how-to
+            display: flex
+            flex-direction: column
+            justify-content: center !important
+            align-items: center !important
+            &__heading
+                margin-bottom: 30px !important
+                font-size: 30px !important
+                line-height: 120% !important
+                max-width: 80%
+                text-align: center !important
     .how-to
         text-align: center
         &__heading
@@ -25,6 +38,10 @@
                 justify-content: flex-start
                 &__img
                     margin-right: 30px
+                    @include responsive-m()
+                        margin-right: 20px !important
+                        width: 40px !important
+                        height: 40px !important
                 &__text
                     display: flex
                     flex-direction: column
@@ -38,6 +55,9 @@
                         line-height: 120%
                         color: #000000
                         margin-bottom: 10px
+                        @include responsive-m()
+                            font-size: 20px !important
+                            line-height: 120% !important
                     p
                         font-family: 'Nunito Sans'
                         font-style: normal
@@ -60,6 +80,9 @@
                             font-size: 14px
                             line-height: 200%
                             color: rgba(0, 0, 0, 1)
+                            @include responsive-m()
+                                font-size: 14px !important
+                                line-height: 200% !important
                     .copy-text
                         margin-top: 20px
                         margin-bottom: 20px
@@ -72,6 +95,8 @@
                         background: #FFFFFF
                         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05)
                         border-radius: 15px
+                        @include responsive-m()
+                            height: 100px !important
                         span
                             font-family: 'Nunito Sans'
                             font-style: normal
@@ -79,3 +104,6 @@
                             font-size: 14px
                             line-height: 200%
                             color: #000000
+                            @include responsive-m()
+                                font-size: 14px !important
+                                line-height: 200% !important

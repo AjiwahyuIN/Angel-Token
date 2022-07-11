@@ -153,6 +153,11 @@ $('.btn-sidenav-m').click(function(){
 })
 
 
+$('.member-m__wrapper-xl').slick({
+  slidesToShow: 1,
+  arrows:false,
+  slidesToScroll: 1
+});
 
 new TradingView.widget(
   {

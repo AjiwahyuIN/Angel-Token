@@ -1,6 +1,10 @@
 .sec-accordion
 	.accordion
 		text-align: center
+		@include responsive-m()
+			display: flex
+			flex-direction: row
+			justify-content: center
 		&__heading
 			text-align: center
 			font-family: 'Nunito'
@@ -11,6 +15,11 @@
 			text-align: center
 			color: #FFFFFF
 			margin-bottom: 60px
+			@include responsive-m()
+				font-size: 30px !important
+				line-height: 120% !important
+				margin-bottom: 40px !important
+				max-width: 80% !important
 	.accordion-list
 		position: relative
 		display: block
@@ -51,6 +60,8 @@
 				margin: 0
 				cursor: pointer
 				transition: 300ms
+				@include responsive-m()
+					width: 90% !important
 				&::after
 					content: ""
 					font-family: "material-design-iconic-font"
@@ -64,6 +75,8 @@
 					width: 20px
 					height: 20px
 					margin-bottom: 20px
+					@include responsive-m()
+						right: -40px !important
 			&__answer
 				position: relative
 				display: block
