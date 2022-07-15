@@ -4,8 +4,13 @@
         display: flex
         justify-content: center
         align-items: center
+        @include responsive-m()
+            &__number:nth-child(7)
+                display: none !important
         &__prev:hover
             background-color: rgba(0, 0, 0, 1)
+            @include responsive-m()
+                background-image: url('../images/arrow-l-w.svg')
             span
                 color: #ffffff
         &__prev
@@ -18,6 +23,13 @@
             align-items: center
             justify-content: center
             margin-right: 10px
+            @include responsive-m()
+                background-image: url('../images/arrow-l.svg')
+                background-repeat: no-repeat
+                background-position: center center
+                width: 40px !important
+                span
+                    display: none
             span
                 font-family: 'Nunito'
                 font-style: normal
@@ -33,6 +45,17 @@
             padding: 10px 15px 10px 15px
             border-radius: 10px
             margin-right: 10px
+            @include responsive-m()
+                padding: 8px 15px !important
+            &--active
+                padding: 10px 15px 10px 15px
+                border-radius: 10px
+                margin-right: 10px
+                background-color: rgba(0, 0, 0, 1)
+                @include responsive-m()
+                    padding: 8px 15px !important
+                span
+                    color: #ffffff
             span
                 font-family: 'Nunito'
                 font-style: normal
@@ -42,6 +65,8 @@
                 color: #000000
         &__next:hover
             background-color: rgba(0, 0, 0, 1)
+            @include responsive-m()
+                background-image: url('../images/arrow-r-w.svg')
             span
                 color: #ffffff
         &__next
@@ -54,6 +79,13 @@
             align-items: center
             justify-content: center
             margin-right: 10px
+            @include responsive-m()
+                background-image: url('../images/arrow-r.svg')
+                background-repeat: no-repeat
+                background-position: center center
+                width: 40px !important
+                span
+                    display: none
             span
                 font-family: 'Nunito'
                 font-style: normal

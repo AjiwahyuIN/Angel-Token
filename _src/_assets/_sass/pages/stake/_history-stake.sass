@@ -26,8 +26,13 @@
             flex-direction: row
             justify-content: center
             align-items: center
+            @include responsive-m()
+                &__number:nth-child(7)
+                    display: none !important
             &__prev:hover
                 background-color: rgba(0, 0, 0, 1)
+                @include responsive-m()
+                    background-image: url('../images/arrow-l-w.svg')
                 span
                     color: #ffffff
             &__prev
@@ -41,6 +46,13 @@
                 border: 1px solid #DCDCDC
                 border-radius: 10px
                 margin-right: 10px
+                @include responsive-m()
+                    background-image: url('../images/arrow-l.svg')
+                    background-repeat: no-repeat
+                    background-position: center center
+                    width: 40px !important
+                    span
+                        display: none
                 span
                     font-family: 'Nunito'
                     font-style: normal
@@ -50,6 +62,8 @@
                     color: #000000
             &__next:hover
                 background-color: rgba(0, 0, 0, 1)
+                @include responsive-m()
+                    background-image: url('../images/arrow-r-w.svg')
                 span
                     color: #ffffff
             &__next
@@ -62,6 +76,13 @@
                 height: 40px
                 border: 1px solid #DCDCDC
                 border-radius: 10px
+                @include responsive-m()
+                    background-image: url('../images/arrow-r.svg')
+                    background-repeat: no-repeat
+                    background-position: center center
+                    width: 40px !important
+                    span
+                        display: none
                 span
                     font-family: 'Nunito'
                     font-style: normal

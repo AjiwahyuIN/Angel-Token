@@ -495,6 +495,7 @@ button.btn-arrow {
     left: 20px;
     top: 25px;
     margin: auto;
+    cursor: pointer;
   }
   .navigation .navigation__cta {
     display: none;
@@ -871,8 +872,18 @@ button.btn-arrow {
       -ms-flex-align: center;
           align-items: center;
 }
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__number:nth-child(7) {
+    display: none !important;
+  }
+}
 .sec-pagination .pagination__prev:hover {
   background-color: rgb(0, 0, 0);
+}
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__prev:hover {
+    background-image: url("../images/arrow-l-w.svg");
+  }
 }
 .sec-pagination .pagination__prev:hover span {
   color: #ffffff;
@@ -894,6 +905,17 @@ button.btn-arrow {
           justify-content: center;
   margin-right: 10px;
 }
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__prev {
+    background-image: url("../images/arrow-l.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px !important;
+  }
+  .sec-pagination .pagination__prev span {
+    display: none;
+  }
+}
 .sec-pagination .pagination__prev span {
   font-family: "Nunito";
   font-style: normal;
@@ -913,6 +935,25 @@ button.btn-arrow {
   border-radius: 10px;
   margin-right: 10px;
 }
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__number {
+    padding: 8px 15px !important;
+  }
+}
+.sec-pagination .pagination__number--active {
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: rgb(0, 0, 0);
+}
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__number--active {
+    padding: 8px 15px !important;
+  }
+}
+.sec-pagination .pagination__number--active span {
+  color: #ffffff;
+}
 .sec-pagination .pagination__number span {
   font-family: "Nunito";
   font-style: normal;
@@ -923,6 +964,11 @@ button.btn-arrow {
 }
 .sec-pagination .pagination__next:hover {
   background-color: rgb(0, 0, 0);
+}
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__next:hover {
+    background-image: url("../images/arrow-r-w.svg");
+  }
 }
 .sec-pagination .pagination__next:hover span {
   color: #ffffff;
@@ -943,6 +989,17 @@ button.btn-arrow {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 10px;
+}
+@media all and (max-width: 568px) {
+  .sec-pagination .pagination__next {
+    background-image: url("../images/arrow-r.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px !important;
+  }
+  .sec-pagination .pagination__next span {
+    display: none;
+  }
 }
 .sec-pagination .pagination__next span {
   font-family: "Nunito";
@@ -2378,12 +2435,12 @@ button.btn-arrow {
 }
 
 .sec-product {
-  padding-top: 80px;
+  padding-top: 0px;
   padding-bottom: 80px;
 }
 @media all and (max-width: 568px) {
   .sec-product {
-    padding: 60px 0px 60px 0px !important;
+    padding: 0px 0px 60px 0px !important;
   }
   .sec-product .product__heading {
     font-size: 30px !important;
@@ -4105,8 +4162,18 @@ button.btn-arrow {
       -ms-flex-align: center;
           align-items: center;
 }
+@media all and (max-width: 568px) {
+  .sec-history-stake .history-stake__pagination__number:nth-child(7) {
+    display: none !important;
+  }
+}
 .sec-history-stake .history-stake__pagination__prev:hover {
   background-color: rgb(0, 0, 0);
+}
+@media all and (max-width: 568px) {
+  .sec-history-stake .history-stake__pagination__prev:hover {
+    background-image: url("../images/arrow-l-w.svg");
+  }
 }
 .sec-history-stake .history-stake__pagination__prev:hover span {
   color: #ffffff;
@@ -4132,6 +4199,17 @@ button.btn-arrow {
   border-radius: 10px;
   margin-right: 10px;
 }
+@media all and (max-width: 568px) {
+  .sec-history-stake .history-stake__pagination__prev {
+    background-image: url("../images/arrow-l.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px !important;
+  }
+  .sec-history-stake .history-stake__pagination__prev span {
+    display: none;
+  }
+}
 .sec-history-stake .history-stake__pagination__prev span {
   font-family: "Nunito";
   font-style: normal;
@@ -4142,6 +4220,11 @@ button.btn-arrow {
 }
 .sec-history-stake .history-stake__pagination__next:hover {
   background-color: rgb(0, 0, 0);
+}
+@media all and (max-width: 568px) {
+  .sec-history-stake .history-stake__pagination__next:hover {
+    background-image: url("../images/arrow-r-w.svg");
+  }
 }
 .sec-history-stake .history-stake__pagination__next:hover span {
   color: #ffffff;
@@ -4165,6 +4248,17 @@ button.btn-arrow {
   height: 40px;
   border: 1px solid #DCDCDC;
   border-radius: 10px;
+}
+@media all and (max-width: 568px) {
+  .sec-history-stake .history-stake__pagination__next {
+    background-image: url("../images/arrow-r.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 40px !important;
+  }
+  .sec-history-stake .history-stake__pagination__next span {
+    display: none;
+  }
 }
 .sec-history-stake .history-stake__pagination__next span {
   font-family: "Nunito";
