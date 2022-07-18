@@ -10,6 +10,7 @@
         .box-team
             column-gap: 0px
             row-gap: 0px
+            padding-bottom: 70px !important
 
         .slick-dots
             display: flex
@@ -18,6 +19,11 @@
             column-gap: 15px
             height: 50px
             margin-top: 20px
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            margin: auto
             li
                 position: relative
                 overflow: hidden
@@ -42,8 +48,10 @@
             bottom: 0
             &.btn-prev
                 left: 20px
+                z-index: 9
             &.btn-next
                 right: 20px
+                z-index: 9
 
 .team-heading
     text-align: center
@@ -130,11 +138,10 @@
             height: 220px
         &__info
             padding: 38px 0px
-            
+
         &__name
             font-size: 20px
             line-height: 24px
-
 
         &__photo
             img
@@ -151,6 +158,3 @@
 
         &__name
             font-size: 20px
-
-
-

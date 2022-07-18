@@ -39,9 +39,12 @@
                 &__img
                     margin-right: 30px
                     @include responsive-m()
-                        margin-right: 20px !important
+                        margin-right: 14px !important
                         width: 40px !important
                         height: 40px !important
+                @include responsive-m
+                    &__text:nth-child(3)
+                        max-width: 89% !important
                 &__text
                     display: flex
                     flex-direction: column
@@ -97,6 +100,8 @@
                         border-radius: 15px
                         @include responsive-m()
                             height: 100px !important
+                            justify-content: center !important
+                            align-items: center !important
                         span
                             font-family: 'Nunito Sans'
                             font-style: normal
@@ -105,5 +110,7 @@
                             line-height: 200%
                             color: #000000
                             @include responsive-m()
-                                font-size: 14px !important
+                                font-size: 12px !important
                                 line-height: 200% !important
+                                width: 100% !important
+                                margin-bottom: 0px !important
