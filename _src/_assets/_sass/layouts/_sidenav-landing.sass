@@ -1,0 +1,74 @@
+
+.sidenav-landing
+    background-color: #ffffff
+    display: flex
+    flex-direction: column
+    width: 250px
+    height: 100vh
+    position: fixed !important
+    z-index: 1009
+    padding: 30px
+    position: relative
+    @include responsive-xl()
+        display: none !important
+    @include responsive-m()
+        padding: 20px
+        width: 100%
+        display: none
+        .sidenav-landing__img
+            width: 150px
+            margin-bottom: 0px
+        .btn-hamburger-side
+            width: 40px
+            height: 40px
+            cursor: pointer
+            background-image: url("../images/hamburger.svg")
+            background-position: center center
+            background-repeat: no-repeat
+            padding: 10px
+            border: 1px solid rgba(0, 0, 0, 0.5)
+            border-radius: 10px
+            position: absolute
+            top: 20px
+            right: 20px
+            z-index: 1009
+        .btn-launch
+            padding: 10px 20px 10px 20px
+            border: 1px solid rgba(220, 220, 220, 1)
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            cursor: pointer
+            text-decoration: none
+            width: 100%
+            margin-top: 30px
+            span
+                font-family: 'Nunito Sans'
+                font-style: normal
+                font-weight: 700
+                font-size: 14px
+                line-height: 21px
+                color: #000000
+        .btn-connect-side
+            padding: 10px 20px 10px 20px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            cursor: pointer
+            text-decoration: none
+            width: 100%
+            margin-top: 20px
+            background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%)
+            span
+                font-family: 'Nunito Sans'
+                font-style: normal
+                font-weight: 700
+                font-size: 14px
+                line-height: 21px
+                color: #000000
+    &__img
+        width: 100%
+        margin-bottom: 30px
+        margin-top: 5px

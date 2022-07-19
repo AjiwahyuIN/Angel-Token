@@ -8,6 +8,25 @@
 	z-index: 1000
 	transition: all 0.3s
 	background-color: var(--bg-body)
+	@include responsive-m()
+		.btn-hamburger
+			display: block !important
+
+	.btn-hamburger
+		width: 40px
+		height: 40px
+		cursor: pointer
+		background-image: url("../images/hamburger.svg")
+		background-position: center center
+		background-repeat: no-repeat
+		padding: 10px
+		border: 1px solid rgba(0, 0, 0, 0.5)
+		border-radius: 10px
+		position: absolute
+		right: 20px
+		top: 20px
+		margin: auto 0
+		display: none
 
 	&__container
 		@extend .flex, .justify-between, .items-center
@@ -20,7 +39,7 @@
 
 		&.brand-logo
 			height: 40px
-			img 
+			img
 				width: auto
 				height: 40px
 
@@ -34,7 +53,7 @@
 		backdrop-filter: blur(20px)
 		&::after
 			opacity: 0
-		
+
 	&__toggle-menu
 		display: none
 		background-color: transparent
@@ -44,13 +63,15 @@
 		height: 72px
 		@extend .flex, .items-center, .justify-center
 
-
 	@include responsive-m()
 		padding: 20px 0px
 		&__cta
 			display: none
 
 		&__logo
-			text-align: center
-			&.brand-logo
-				height: 40px
+			text-align: left
+			padding-left: 20px
+			margin-top: 5px !important
+			&__img
+				width: 150px !important
+				max-height: 30px !important

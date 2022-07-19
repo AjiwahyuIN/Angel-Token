@@ -152,6 +152,14 @@ $('.btn-sidenav-m').click(function(){
   $('.sidenav').css({'display':'none'})
 })
 
+$('.btn-hamburger').click(function(){
+  $('.sidenav-landing').css({'display':'block','opacity':'1 !important', 'transition': 'opacity 1s ease-out'})
+})
+
+$('.btn-hamburger-side').click(function(){
+  $('.sidenav-landing').css({'display':'none'})
+})
+
 
 $('.member-m__wrapper-xl').slick({
   slidesToShow: 1,

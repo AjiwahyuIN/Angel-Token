@@ -419,6 +419,27 @@ button.btn-arrow {
   transition: all 0.3s;
   background-color: var(--bg-body);
 }
+@media all and (max-width: 568px) {
+  .navbar .btn-hamburger {
+    display: block !important;
+  }
+}
+.navbar .btn-hamburger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url("../images/hamburger.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  margin: auto 0;
+  display: none;
+}
 .navbar__container {
   max-width: 1170px;
   margin: 0 auto;
@@ -464,10 +485,13 @@ button.btn-arrow {
     display: none;
   }
   .navbar__logo {
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 5px !important;
   }
-  .navbar__logo.brand-logo {
-    height: 40px;
+  .navbar__logo__img {
+    width: 150px !important;
+    max-height: 30px !important;
   }
 }
 
@@ -773,6 +797,113 @@ button.btn-arrow {
 }
 .sidenav .panel-title a:focus {
   text-decoration: none;
+}
+
+.sidenav-landing {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  height: 100vh;
+  position: fixed !important;
+  z-index: 1009;
+  padding: 30px;
+  position: relative;
+}
+@media all and (min-width: 1024px) {
+  .sidenav-landing {
+    display: none !important;
+  }
+}
+@media all and (max-width: 568px) {
+  .sidenav-landing {
+    padding: 20px;
+    width: 100%;
+    display: none;
+  }
+  .sidenav-landing .sidenav-landing__img {
+    width: 150px;
+    margin-bottom: 0px;
+  }
+  .sidenav-landing .btn-hamburger-side {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url("../images/hamburger.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1009;
+  }
+  .sidenav-landing .btn-launch {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(220, 220, 220);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .sidenav-landing .btn-launch span {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .sidenav-landing .btn-connect-side {
+    padding: 10px 20px 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 20px;
+    background: -webkit-gradient(linear, left top, right top, from(#E0AA3E), color-stop(9.9%, #F9F295), color-stop(36.45%, #E0AA3E), color-stop(65.62%, #F9F295), to(#B88A44));
+    background: -o-linear-gradient(left, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%);
+    background: linear-gradient(90deg, #E0AA3E 0%, #F9F295 9.9%, #E0AA3E 36.45%, #F9F295 65.62%, #B88A44 100%);
+  }
+  .sidenav-landing .btn-connect-side span {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}
+.sidenav-landing__img {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
 
 .footer {
